@@ -23,7 +23,7 @@ void update_file(int sem_set_id, char* file, int num){
   sem_op.sem_flg = 0;
   semop(sem_set_id, &sem_op, 1);
    /* Αποκλειστική προσπέλαση στο αρχείο και γράψιμο ενός
-   αριθμού σ’ αυτό */
+   αριθμού σ' αυτό */
   fp = fopen(file, "w");
   if (fp != NULL){
      fprintf(fp, "%d\n", num);

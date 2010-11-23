@@ -13,7 +13,7 @@ int main(void){
          unsigned short *array;
     }arg;
     skey = 1234;
-    /* Αρπαγή του συνόλου σημαφόρων του semSetUp.c */
+    /* Αρπαγή του συνόλου σημαφόρων του semsetUp.c */
   if ((sid = semget(skey, 1, 0)) == -1){
       perror("semget"); /* Αποτυχημένη προσπάθεια */
       exit(1);
