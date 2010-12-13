@@ -18,6 +18,9 @@
 \usepackage{color}
 \usepackage{textcomp}
 \usepackage{fullpage}
+\usepackage[pdftex]{graphicx}
+\usepackage{epstopdf}
+\usepackage{fancyhdr}
 \definecolor{listinggray}{gray}{0.9}
 \definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
 \lstset{
@@ -45,11 +48,20 @@
  escapeinside={(*@}{@*)},
 }
 \renewcommand*\lstlistingname{Πρόγραμμα}
+\renewcommand{\headrulewidth}{1pt}
+\addtolength{\headheight}{0pt}
+
+
 
 \begin{document}
 
 \tableofcontents
-
+\clearpage
+\pagestyle{fancy}
+\rhead{%
+  Τεχνολογικό Εκπαιδευτικό Ίδρυμα Πειραιά
+  \protect\includegraphics[height=2ex]{images/tei_logo3}
+}
 
 %% 1. Διεργασίες
 \newpage
