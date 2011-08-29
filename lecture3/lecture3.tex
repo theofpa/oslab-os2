@@ -5,7 +5,7 @@
 %% "Michalis Iordanakis" <mdi@oslab.teipir.gr>
 %% "Aggelos Karvounis" <akavroun@oslab.teipir.gr>
 
-\section{Σήματα}
+\section{Έλεγχος Σημάτων}
 
 Πολλές φορές παρουσιάζονται αναπάντεχα ή απρόβλεπτα συμβάντα
 κατά την εξέλιξη ενός προγράμματος όπως για παράδειγμα μιά
@@ -228,7 +228,7 @@ First child-process
 Second child-process
 \end{verbatim}
 
-\subsection{Η συνάρτηση pause()}
+\subsection{Κλήση συστήματος pause()}
 Η pause() αναστέλλει μια διεργασία μέχρι να ληφθεί ένα σήμα.
 
 \begin{verbatim}
@@ -236,7 +236,7 @@ Second child-process
 int pause(void);
 \end{verbatim}
 
-\subsection{Η συνάρτηση alarm()}
+\subsection{Κλήση συστήματος alarm()}
 Ένας απλός τρόπος που παρουσιάζει ένα σήμα σε δράση, μπορεί να
 υλοποιηθεί με μια διεργασία που δέχεται ένα σήμα συναγερμού
 SIGALARM, χρησιμοποιώντας την alarm(). Ο προεπιλεγμένος
@@ -282,10 +282,10 @@ Tue Oct 26 14:49:45 EEST 2010
 
 \subsection{Ασκήσεις}
 
-\subsubsection{Ασκηση 1}
+\subsubsection*{Ασκηση 1}
 Να γραφεί πρόγραμμα σε C, το οποίο τερματίζει τον φλοιό.
 
-\subsubsection{Ασκηση 2}
+\subsubsection*{Ασκηση 2}
 Να γραφεί πρόγραμμα σε C, το οποίο σαν διεργασία, όταν δέχεται
 ένα σήμα (π.χ. το SIGUSR1) να δημιουργεί ένα αντίγραφο του
 εαυτού του και κατόπιν να τερματίζει.
